@@ -23,3 +23,5 @@ npm install knex sqlite3 - instala o query builder e o sqlite
 npm i dotenv
 
 npm i zod
+
+npm i @fastify/cookie

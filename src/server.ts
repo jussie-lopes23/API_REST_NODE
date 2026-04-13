@@ -1,20 +1,16 @@
 import fastify from 'fastify';
 import crypto from 'node:crypto'
-import { db } from './database.js';
+
 import { env } from './env/index.js';
+import { transactionsroutes } from './routes/transactions.js';
+import cookie from '@fastify/cookie';
 
 const app = fastify()
 
-app.get('/hello', async () => {
-    // const transaction = await db('transactions').insert({
-    //     id: crypto.randomUUID(),
-    //     title: 'primeira transação',
-    //     amount: 1000,
-    // }).returning('*')
+app.register(cookie)
 
-    const transaction = await db('transactions')
-    .select('*')
-    return transaction
+app.register(transactionsroutes, {
+    prefix: 'transactions',
 })
 
 app.listen({
