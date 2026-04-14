@@ -25,3 +25,9 @@ npm i dotenv
 npm i zod
 
 npm i @fastify/cookie
+
+npm i vitest -D
+
+npm i supertest -D
+
+ npm i -D @types/supertest

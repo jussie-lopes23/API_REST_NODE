@@ -7,7 +7,6 @@ const envSchema = z.object({
     PORT: z.coerce.number().default(3333), 
 })
 
-console.log('DATABASE_URL:', process.env.DATABASE_URL)
 const _env =  envSchema.safeParse(process.env)
 
 if(_env.success === false){
