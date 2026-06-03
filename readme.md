@@ -64,7 +64,8 @@ npm i zod
 npm i @fastify/cookie
 
 npm i vitest -D
+para criar o arquivo de teste pode usar exemplo.spec.ts ou exemplo.test.ts
 
 npm i supertest -D
 
- npm i -D @types/supertest
+ npm i -D @types/supertest baixar os tipos para o superteste rodar com typescript 
