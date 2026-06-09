@@ -69,3 +69,8 @@ para criar o arquivo de teste pode usar exemplo.spec.ts ou exemplo.test.ts
 npm i supertest -D
 
  npm i -D @types/supertest baixar os tipos para o superteste rodar com typescript 
+
+ um teste não pode depender de outro teste para funcionar
+
+ fazer daploy com serviços gerenciados, 
+ npm i tsup -D - ferramenta para fazer o processp de build de ts para js. 

@@ -84,8 +84,8 @@ export async function transactionsroutes(app: FastifyInstance){
         await db('transactions').insert({
             id: randomUUID(),
             title,
-            amount,
-            //amount: type === 'credit' ? amount : amount * -1,
+            //amount, 
+            amount: type === 'credit' ? amount : amount * -1,
             type,
             session_id: sessionId,
         })
