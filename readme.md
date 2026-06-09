@@ -74,3 +74,5 @@ npm i supertest -D
 
  fazer daploy com serviços gerenciados, 
  npm i tsup -D - ferramenta para fazer o processp de build de ts para js. 
+
+ usar o render, fly.io e railway para fazer deploy 
