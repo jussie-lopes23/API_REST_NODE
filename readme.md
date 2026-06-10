@@ -76,3 +76,5 @@ npm i supertest -D
  npm i tsup -D - ferramenta para fazer o processp de build de ts para js. 
 
  usar o render, fly.io e railway para fazer deploy 
+
+ npm i pg - instalar o postgresql para usar em produção. 
